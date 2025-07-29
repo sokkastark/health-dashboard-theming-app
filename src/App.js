@@ -123,8 +123,10 @@ function App() {
     <div className={`app-container ${theme}-theme`}> {/* Add theme class to container */}
       {/* Overlay Header */}
       <header className="app-header">
-        <h1>Patient Health Dashboard</h1>
-        <p className="patient-details">Chron, Stark | 08/22/1990 | 34 | M</p>
+        <div className="header-content-left">
+         <h1>Patient Health Dashboard</h1>
+         <p className="patient-details">Chron, Stark | 08/22/1990 | 34 | M</p>
+        </div>
         <button onClick={toggleTheme} className="theme-toggle-button">
           Switch to {theme === 'dark' ? 'Light' : 'Dark'} Theme
         </button>
